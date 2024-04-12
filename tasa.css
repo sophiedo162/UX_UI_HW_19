@@ -1,6 +1,9 @@
 body{
     width:100%;
 }
+.menuMobileContainer {
+    display: none;
+}
 .footerMobile {
     display: none;
 }
@@ -300,6 +303,26 @@ footer .bottom {
     color:#8E5315;
     padding: 10px;
 }
+.searchExpandMobile {
+    display: none;
+    height: 50px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #82C4FF, #528ABD, #1666AF);
+}
+
+.searchExpandMobile input[type=text] {
+    margin: 6px;
+    height: 35px;
+    width: 150px;
+    padding-left: 30px;
+    background-image: url('shape-mobile.png');
+    background-repeat: no-repeat;
+    background-position: 10px;
+}
+#closeIconMobile {
+    margin-top: 8px;
+}
+
 .searchExpand {
     height: 50px;
     display: flex;
@@ -408,8 +431,57 @@ footer .bottom {
 }
 
 @media all and (max-width: 761px) {
+    .menuMobileContainer {
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgba(83, 108, 133, 0.8);
+        z-index: 1;
+        width: 100%;
+        height: 0vh;
+        transition: all .5s ease;
+    }
+    .menuMobile {
+        margin-top: 150px;
+        opacity: 0;
+        background-color: rgb(255, 255, 255);
+        transition: all .5s ease;
+       font-family:"Bitter";
+       color: #633301;
+       text-align: right;
+       justify-content: right;
+       padding-right: 25px;
+       border: 2px solid #FFB400;
+    }
+    #closeMenuMobile {
+        margin-top: 7px;
+        margin-right: -7px;
+    }
+    .menuMobile p {
+        padding-bottom: 10px;
+    }
+    .menuMobile span {
+        padding: 6px;
+    }
+    header {
+        background-size: cover;
+        height: 160px;
+        display: flex;
+        flex-direction: column;
+    }
+    header .top {
+        justify-content: left;
+        margin-top: -20px;
+    }
+    .iconMobile {
+        margin-top: -90px;
+        justify-content: right;
+    }
     .right img {
         display: none;
+    }
+    #myHeading {
+        margin-top: 15px;
     }
     .title h3 {
         font-size: 22px;
@@ -417,7 +489,7 @@ footer .bottom {
     .iconMobile {
         height: 20px;
         display: flex;
-        padding-top: 20px;
+        padding-top: 30px;
     }
     .iconMobile img {
         padding: 6px;
@@ -442,12 +514,7 @@ footer .bottom {
     .nav {
         display: none;
     }
-    header {
-        display: flex;
-        justify-content: center;
-        height: 180px;
-        background-size: cover ;
-    }
+
     .heroImage {
         background-size: cover;
     }

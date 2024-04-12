@@ -23,8 +23,38 @@ $("#searchIcon").on("click", function(){
 $("#closeIcon").on("click", function() {
     $(".navBar").css("display", "flex");
     $("#searchBar").css("display", "none")
+});
+
+$("#searchIconMobile").on("click", function(){
+    $("#searchExpandMobile").css("display", "flex");
+    $("#searchIconMobile").css("display", "none");
+});
+
+$("#closeIconMobile").on("click", function() {
+    $("#searchIconMobile").css("display", "flex");
+    $("#searchExpandMobile").css("display", "none")
+});
+
+$("#searchIconMobile").on("tap", function(){
+    $("#searchExpandMobile").css("display", "flex");
+    $("#searchIconMobile").css("display", "none");
+});
+
+$("#closeIconMobile").on("tap", function() {
+    $("#searchIconMobile").css("display", "flex");
+    $("#searchExpandMobile").css("display", "none")
+});
+
+$("#hamburgerMenu").on("click", function(){
+    $(".menuMobileContainer").css("display","block");
+    $(".menuMobileContainer").css("height","100vh");
+    $(".menuMobile").css("opacity", "1");
+});
+
+$("#closeMenuMobile").on("click",function(){
+    $(".menuMobileContainer").css("display","none");
+    $(".menuMobileContainer").css("height","0vh");
+    $(".menuMobile").css("opacity", "0");
 })
-
-
 
 
