@@ -52,6 +52,7 @@ header {
     font-family: "Sen";
     text-align: center;
 }
+
 .nav .menu {
     padding-top: 20px;
 }
@@ -65,6 +66,7 @@ header {
 .navBar {
     display: flex;
 }
+
 .nav a {
     text-decoration: none;
     font-size: 20px;
@@ -77,6 +79,7 @@ header {
 .search {
     padding:3px;
     margin: 10px;
+    margin-bottom: 0px;
     background-image: url('Shape.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -355,7 +358,27 @@ footer .bottom {
 .searchInput {
     width: 80%;
 }
-
+.menu {
+    display: flex;
+}
+.dropDown {
+    margin-top: 10px;
+    position: fixed;
+    background-color: white;
+    border: 2px solid #FFB400;
+    width: 16%;
+    z-index: 1;
+    opacity: 0;
+}
+.dropDown p {
+    text-align: left;
+    padding-left: 10px;
+    color:#633301;
+    font-family: "Sen";
+    font-size: 16px;
+    font-weight: 600;
+    color:#135997;
+}
 
 @media all and (max-width: 1175px) {
     .nav {
@@ -413,6 +436,9 @@ footer .bottom {
     .nav a {
         font-size: 16px;
     }
+    #searchIcon{
+        margin-bottom: -9px;
+    }
     .pageTitle h1 {
         font-size: 30px;
     }
@@ -428,6 +454,9 @@ footer .bottom {
     footer .top {
         padding-bottom: 0;
     }
+    .portial .button1 {
+        margin-top: -5px;
+    }
 }
 
 @media all and (max-width: 761px) {
@@ -442,7 +471,10 @@ footer .bottom {
         transition: all .5s ease;
     }
     .menuMobile {
+        width: 90%;
         margin-top: 150px;
+        margin-left: auto;
+        margin-right: auto;
         opacity: 0;
         background-color: rgb(255, 255, 255);
         transition: all .5s ease;

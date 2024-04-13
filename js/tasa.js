@@ -55,6 +55,16 @@ $("#closeMenuMobile").on("click",function(){
     $(".menuMobileContainer").css("display","none");
     $(".menuMobileContainer").css("height","0vh");
     $(".menuMobile").css("opacity", "0");
-})
+});
+
+$("#aboutUs").on("click", function(){
+    $(".aboutUs").css("opacity", "1")
+});
+
+$("#membership").on("click", function(){
+    $(".membership").css("opacity", "1")
+});
+
+
 
 
