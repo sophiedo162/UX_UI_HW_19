@@ -65,3 +65,26 @@ $("#membership").on("click", function(){
     $(".membership").css("opacity", "1")
 });
 
+$("#support").on("click", function(){
+    $(".support").css("opacity", "1")
+});
+
+$("#events").on("click", function(){
+    $(".events").css("opacity", "1")
+});
+
+$(".events").on("mouseleave", function(){
+    $(".events").css("opacity", "0")
+});
+
+$(".support").on("mouseleave", function(){
+    $(".support").css("opacity", "0")
+});
+
+$(".membership").on("mouseleave", function(){
+    $(".membership").css("opacity", "0")
+});
+
+$(".aboutUs").on("mouseleave", function(){
+    $(".aboutUs").css("opacity", "0")
+});
