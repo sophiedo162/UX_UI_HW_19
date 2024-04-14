@@ -65,6 +65,3 @@ $("#membership").on("click", function(){
     $(".membership").css("opacity", "1")
 });
 
-
-
-
